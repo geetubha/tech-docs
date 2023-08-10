@@ -10,10 +10,12 @@ An inverted index is a data structure used to store a mapping from words or term
 
 ### Algorithm for Inverted Index Construction
 
+[The Inverted Index: The Key Data Structure Underlying Modern IR](https://www.slideserve.com/lumina/the-inverted-index-the-key-data-structure-underlying-modern-ir)
+
 | Step  | Description                                                                                   | Example or Details                                               |
 |-------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | 1     | **Tokenizer:** Break the text into individual words or tokens.                                | Input: Raw text documents; Output: List of tokens.               |
-| 2     | **Linguistic Modules:** Apply stemming, stop words removal, and lowercasing.                   | Stemming: "running" to "run"; Remove: "and," "the"; Lowercase.  |
+| 2     | **Linguistic Modules:** Apply normalization, stemming, stop words removal, and lowercasing.                   | Stemming: "running" to "run"; Remove: "and," "the"; Lowercase.  |
 | 3     | **Initialize Index:** Create an empty hash table or dictionary to store the index.             | Use a data structure like a hash table or dictionary.            |
 | 4     | **Iterate through Tokens:** Note the document ID and position for each token.                   | For each token, add the document ID and position to the index.   |
 | 5     | **Handle Duplicates:** If a token appears multiple times, append new locations to the existing entry. | If token is already in the index, append new locations.          |
