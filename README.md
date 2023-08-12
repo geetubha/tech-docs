@@ -15,3 +15,4 @@ Reference System Design Concepts
 | [Hash Index and Hash Table](./docs/hashindex_table.md)   | An in-memory structure that provides quick data retrieval, often used in caching and real-time analytics. | Online Processing concept
 | [CAP Theorem](./docs/cap_theorem.md)   | States that it is impossible for a distributed system to simultaneously provide all three of guarantees for Consistency, Availability and Partition tolerance. | Online and Batch Processing concept
 | [K-way External Sort-Merge and Merging K Sorted Lists](./docs/sort-merge-algos.md)   | These are algorithms used for sorting and merging large datasets. | Batch Processing concept
+| [Forward Proxy vs Reverse Proxy](./docs/types-proxy.md)   | A forward proxy, is a server that shields client (user) devices from the internet. A reverse proxy server forwards requests to web servers and returns results as if it processed the request.. | Online Processing concept
