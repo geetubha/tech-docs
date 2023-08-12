@@ -1,6 +1,6 @@
 # Online Processing systems
 
-Online processing systems are computer systems that facilitate real-time processing of data, allowing immediate access and manipulation. They are essential in various industries and applications.
+Computing systems that handle requests and perform operations in real-time, allowing immediate access and manipulation. They are essential in various industries and applications.
 
 | Type                        | Example                          | How it Works                                                                                   |
 |-----------------------------|----------------------------------|------------------------------------------------------------------------------------------------|
