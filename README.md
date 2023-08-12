@@ -17,6 +17,7 @@ Reference System Design Concepts
 | [K-way External Sort-Merge and Merging K Sorted Lists](./docs/sort-merge-algos.md)   | These are algorithms used for sorting and merging large datasets. | Batch Processing concept
 | [Forward Proxy vs Reverse Proxy](./docs/types-proxy.md)   | A forward proxy, is a server that shields client (user) devices from the internet. A reverse proxy server forwards requests to web servers and returns results as if it processed the request. | Online Processing concept
 | [Distributed Systems](./docs/distributed-sd.md)   | Collection of independent computers that appear   as a single coherent system to end users. | Online, Batch and Stream Processing concepts
+| [API Gateway](./docs/api-gateway-sd.md)   | An API gateway is a server that acts as an API front-end, receiving requests and routing them to the appropriate microservices. It serves as a single entry point for managing and controlling API traffic. | Online, Batch and Stream Processing concepts
 
 ### **Reference Conceptual Q&A**
 
