@@ -10,7 +10,7 @@
 
     **A:** A load balancer distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed. It's used to improve system performance, reliability, and efficiency by balancing the load, reducing bottlenecks, and providing fault tolerance.
 
-**Example:** An e-commerce site using a load balancer to distribute traffic during a big sale, preventing server overload.
+    **Example:** An e-commerce site using a load balancer to distribute traffic during a big sale, preventing server overload.
 
 ---
 
@@ -107,27 +107,3 @@
     **A:** MapReduce is a programming model for processing large datasets in parallel across a distributed cluster. It consists of a Map step that processes input data and a Reduce step that aggregates the results. It's widely used in big data processing, such as in Apache Hadoop.
 
 ---
-    
-18. **Q: What is an API gateway, and what are its main functions?**
-
-    **A:** An API gateway is a server that acts as an API front-end, receiving requests and routing them to the appropriate microservices. It serves as a single entry point for managing and controlling API traffic. The main functions of an API gateway include:
-
-- **Request Routing:** Directing requests to the right service.
-  - **Example:** In an e-commerce platform, routing a product inquiry to the product service and a billing inquiry to the billing service.
-
-- **Security:** Handling authentication and authorization.
-  - **Example:** Verifying user tokens and permissions before allowing access to certain services in a banking application.
-
-- **Rate Limiting:** Controlling the number of requests a user or system can make within a specified time.
-  - **Example:** Limiting free-tier users to 100 requests per hour in a weather API to prevent abuse.
-
-- **Analytics and Monitoring:** Collecting data on API usage and performance.
-  - **Example:** Tracking the most frequently accessed endpoints in a content delivery API to identify popular content.
-
-- **Caching:** Storing copies of previous responses to improve response times.
-  - **Example:** Caching the results of common search queries in a travel booking site to provide faster results.
-
-- **Load Balancing:** Distributing requests evenly across multiple instances of a service.
-  - **Example:** In a video streaming platform, distributing user requests across multiple servers to ensure smooth streaming during peak times.
-
-The API gateway plays a crucial role in modern, microservices-based architectures by providing a centralized point for managing, securing, and optimizing API traffic. It helps in maintaining the cohesion and separation of concerns in a distributed system, enabling scalability and flexibility.
