@@ -2,35 +2,66 @@
 
 1. **Q: What is the CAP theorem, and why is it important in distributed systems?**
 
-    **A:** The CAP theorem states that a distributed system can only achieve two out of three properties: Consistency, Availability, and Partition tolerance. It's important because it guides the design of distributed systems, helping engineers choose the right trade-offs based on the system's needs.
+    **A:** The CAP theorem states that When network partioned, a  distributed system can either be Consistent or Available. CP - "Consistent when partioned" or AP - "Available when
+    partioned". When CA - it's not a Distributed system.
 
 ---
 
-2. **Q: How does a load balancer work, and why is it used?**
+1. **Q: How does a load balancer work, and why is it used?**
 
     **A:** A load balancer distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed. It's used to improve system performance, reliability, and efficiency by balancing the load, reducing bottlenecks, and providing fault tolerance.
 
-    **Example:** An e-commerce site using a load balancer to distribute traffic during a big sale, preventing server overload.
-
 ---
 
-3. **Q: What's the difference between SQL and NoSQL databases?**
+1. **Q: What's the difference between SQL and NoSQL databases?**
 
-    **A:** SQL databases are relational and use structured query language, with a fixed schema. They're great for complex queries and ACID transactions. NoSQL databases are non-relational and schema-less, offering more flexibility and scalability, often used for handling large amounts of unstructured data.
+    **A:** SQL databases are relational that represent and store data in tables and rows. You can perform join operations using SQL across different DB tables. They have a fixed schema and are great for complex queries and ACID transactions. Popular one are MySQL, Oracle, PostgresSQL etc.
+    NoSQL databases are non-relational and schema-less, often used for handling large/massive amount of unstructured data, when your application requires super low latency and when you only need to serialize or deserialize data (XML, YAML, JSON etc). Grouped in 4 major categories:
+
+    1. **Document-Based NoSQL Databases**
+
+   These databases store data in document-like formats, typically JSON or BSON, allowing complex data structures within documents.
+
+   - **Examples**:
+     - **MongoDB**: Used for a wide variety of applications, from e-commerce to IoT.
+     - **Couchbase**: Ideal for content caching and mobile and web applications.
+
+    1. **Key-Value NoSQL Databases**
+
+   Key-Value databases store data in simple key-value pairs and are known for their fast read/write operations.
+
+   - **Examples**:
+     - **Redis**: Popular for caching and real-time analytics.
+     - **Amazon DynamoDB**: A managed database service suitable for web, mobile, gaming, and IoT applications.
+
+    1. **Column-Family NoSQL Databases**
+
+   These databases store data in columns rather than rows, optimizing queries over large datasets and providing high availability and scalability.
+
+   - **Examples**:
+     - **Apache Cassandra**: Known for its distributed architecture, used in applications where data grows rapidly.
+     - **HBase**: A part of the Hadoop ecosystem, suited for random read/write operations in Big Data solutions.
+
+    1. **Graph-Based NoSQL Databases**
+
+   Graph databases are designed to store inter-connected data and relationships, making them ideal for network topology, social networks, and recommendation engines.
+
+   - **Examples**:
+     - **Neo4j**: A highly popular graph database used for social networking, fraud detection, and relationship-heavy data.
+     - **OrientDB**: Offers the flexibility of a document database along with the full power of a graph database.
 
     **Example:** Using SQL for financial data with complex relationships, and NoSQL for social media data with varied structures.
 
 ---
 
-4. **Q: What are SLOs and SLAs, and how do they relate to each other?**
-   
+1. **Q: What are SLOs and SLAs, and how do they relate to each other?**
    **A:** SLOs set specific measurable goals; SLAs include SLOs and define consequences.
    **Example:** An SLO might specify 99.9% uptime, while the SLA might include penalties if that target is not met.
 
 ---
 
 1. **Q: What is the difference between strong consistency and eventual consistency?**
-    **A:** Strong consistency ensures all reads receive the most recent write. Eventual consistency allows temporary inconsistencies but ensures all replicas will eventually have the same data.
+    **A:** Strong consistency ensures all reads receive the most recent write. (CP system is strong consistent) Eventual consistency allows temporary inconsistencies but ensures all replicas will eventually have the same data (AP system is eventual consistent).
     
     **Example:** A banking system may require strong consistency for account balance, while a social media feed may use eventual consistency.
 
